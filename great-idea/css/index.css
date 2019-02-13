@@ -118,7 +118,7 @@ html {
   /* cta */
   /* cta parent container for flex styling */
 
-  .cta-container {
+  .cta.cta-container {
 	display: flex;
 	justify-content: center;
 }
@@ -150,6 +150,8 @@ html {
   .cta img {
 	margin-top: 69px;
   }
+
+  /* main content */
   
   .main-content {
 	border-top: 1px solid black;
@@ -160,10 +162,16 @@ html {
   .main-content .top-content {
 	padding: 0 10px;
   }
+
+  /* top content container for flex styling */
+
+  .main-content .top-content.top-content-container {
+	display: flex;
+  }
   
   .main-content .top-content .text-content {
 	width: 410px;
-	display: inline-block;
+	/* display: inline-block;  removed this and replaced it with flex module under the .top-content-container class */
 	margin-right: 34px;
   }
   
@@ -179,10 +187,16 @@ html {
 	margin-top: 37px;
 	padding: 0 10px;
   }
+
+  /* top content container for flex styling */
+
+  .main-content .bottom-content.bottom-content-container {
+	display: flex;
+  }
   
   .main-content .bottom-content .text-content {
 	width: 275px;
-	display: inline-block;
+	/* display: inline-block; removed this and replaced it with flex module under the .bottom-content-container class*/
 	margin-right: 12px;
   }
   
