@@ -219,3 +219,12 @@ html {
 	text-align: center;
 	font-size: 14px;
   }
+
+
+  /* ------------ services.html additional CSS --------------------- */
+
+  /* Services image section */
+  .services-header-img {
+	margin-top: 20px;
+
+  }
