@@ -81,16 +81,17 @@ html {
   }
   
   /* header */
+  header.header-container {
+	  display: flex;
+  }
   
   header nav {
-	display: inline-block;
 	width: 691px;
 	vertical-align: top;
 	margin-top: 35px;
   }
   
   header nav a {
-	display: inline-block;
 	margin-right: 65px;
 	font-size: 14px;
 	color: gray;
@@ -110,7 +111,6 @@ html {
   }
   
   header .logo {
-	display: inline-block;
 	margin-top: 25px;
   }
   
