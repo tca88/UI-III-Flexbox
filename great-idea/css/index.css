@@ -188,7 +188,7 @@ html {
 	padding: 0 10px;
   }
 
-  /* top content container for flex styling */
+  /* bottom content container for flex styling */
 
   .main-content .bottom-content.bottom-content-container {
 	display: flex;
