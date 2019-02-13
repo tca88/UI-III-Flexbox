@@ -225,6 +225,17 @@ html {
 
   /* Services image section */
   .services-header-img {
-	margin-top: 20px;
+	margin: 20px 0;
 
+  }
+/* Services intro content section */
+  section.intro {
+	border-bottom: 1px solid black;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+
+  }
+
+  section.intro .services-content {
+	line-height: 18px;
   }
