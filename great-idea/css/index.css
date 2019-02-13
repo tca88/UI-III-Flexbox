@@ -300,3 +300,28 @@ html {
   .main-container .section3 .content-block:nth-child(2) {
     margin-right: 0px;
   }
+
+  /* Bottom (Facts) section of Services page  */
+
+
+  /* Bottom full container containing Facts content and supporting image  */
+
+  section.bottom-content-container {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+
+  /* Bottom text content only */
+
+  section.bottom-content-container .bottom-content {
+    padding-right: 50px;
+  }
+
+    /* Bottom text content, listed text only */
+  section.bottom-content-container .bottom-content ul {
+    list-style-type: square;
+    margin-left:20px;
+    margin-top: 20px;
+    line-height: 25px;
+  }
