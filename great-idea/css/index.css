@@ -64,3 +64,251 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+
+  /* Main div container */
+
+  .container {
+	width: 880px;
+	/* TB LR */
+	margin: 0 auto;
+  }
+  
+  /* header */
+  /* header parent container for flex styling */
+  header.header-container {
+	  display: flex;
+  }
+  
+  header nav {
+	width: 691px;
+	vertical-align: top;
+	margin-top: 35px;
+  }
+  
+  header nav a {
+	margin-right: 65px;
+	font-size: 14px;
+	color: gray;
+	text-decoration: none;
+  }
+  
+  header nav a:hover {
+	text-decoration: underline;
+  }
+  
+  header nav a:first-child {
+	margin-left: 0;
+  }
+  
+  header nav a:last-child {
+	margin-right: 0;
+  }
+  
+  header .logo {
+	margin-top: 25px;
+  }
+  
+  /* cta */
+  /* cta parent container for flex styling */
+
+  .cta.cta-container {
+	display: flex;
+	justify-content: center;
+}
+  
+  .cta .cta-text {
+	/* vertical-align: top;  -- removed to include justify-content: center under .cta-container 
+	class in order to center the image, text and button within that parent container*/
+	font-size: 77px;
+	margin-top: 120px;
+	text-align: center;
+	padding: 0px 75px;
+  }
+  
+  .cta .cta-text button {
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 8px 44px;
+	font-size: 17px;
+	border: 1px solid black;
+	cursor: pointer;
+  }
+  
+  .cta .cta-text button:hover {
+	background: black;
+	color: white;
+  }
+  
+  .cta img {
+	margin-top: 69px;
+  }
+
+  /* main content */
+  
+  .main-content {
+	border-top: 1px solid black;
+	margin-top: 76px;
+	padding-top: 39px;
+  }
+  
+  .main-content .top-content {
+	padding: 0 10px;
+  }
+
+  /* top content container for flex styling */
+
+  .main-content .top-content.top-content-container {
+	display: flex;
+  }
+  
+  .main-content .top-content .text-content {
+	width: 410px;
+	/* display: inline-block;  removed this and replaced it with flex module under the .top-content-container class */
+	margin-right: 34px;
+  }
+  
+  .main-content .top-content .text-content:last-child {
+	margin-right: 0;
+  }
+  
+  .main-content .middle-img {
+	margin-top: 45px;
+  }
+  
+  .main-content .bottom-content {
+	margin-top: 37px;
+	padding: 0 10px;
+  }
+
+  /* bottom content container for flex styling */
+
+  .main-content .bottom-content.bottom-content-container {
+	display: flex;
+  }
+  
+  .main-content .bottom-content .text-content {
+	width: 275px;
+	/* display: inline-block; removed this and replaced it with flex module under the .bottom-content-container class*/
+	margin-right: 12px;
+  }
+  
+  .main-content .bottom-content .text-content:last-child {
+	margin-right: 0;
+  }
+  
+  .contact {
+	margin-top: 57px;
+	border-top: 1px solid black;
+	padding: 39px 10px 0;
+  }
+  
+  .contact p {
+	margin: 20px 0;
+  }
+  
+  footer {
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
+  }
+
+
+  /* ------------ services.html additional CSS --------------------- */
+
+  /* Services image section */
+  .services-header-img {
+	margin: 20px 0;
+
+  }
+/* Services intro content section */
+
+/* Main services content container containing image and services content */
+  section.intro {
+	border-bottom: 1px solid black;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+
+  }
+
+  /* containing services content only */
+  section.intro .services-content {
+	line-height: 18px;
+  }
+
+  /* main section that showcases the different services */
+
+  .main-container {
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+  width: 880 px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  }
+
+    /* main section content blocks (Digital Design, Ux/UI, Digital Marketing,  Web Development, iOS Development & Android Development) */
+
+  .main-container .content-block {
+    border: 1px solid black;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 280px;
+    width: 48%;
+    line-height: 20px;
+    background: #F4F3F4;
+  }
+
+    /* Learn more buttons for each of the content blocks in the main section */
+
+  .main-container .content-block button.learn-more-button {
+  background: white;
+	vertical-align: top;
+	margin-top: 25px;
+	padding: 8px 30px;
+	font-size: 14px;
+	border: 1px solid black;
+  cursor: pointer;
+  border-radius: 3px;
+  }
+
+  /* show main content blocks stacked on top of each other for mobile view */
+
+  @media(max-width: 667px) {
+    .main-container {
+      display: block;
+    }
+  }
+
+  /* Bottom (Facts) section of Services page  */
+
+
+  /* Bottom full container containing Facts content and supporting image  */
+
+  section.bottom-content-container {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+
+  /* Bottom text content only */
+
+  section.bottom-content-container .bottom-content {
+    padding-right: 50px;
+  }
+
+    /* Bottom text content, listed text only */
+  section.bottom-content-container .bottom-content ul {
+    list-style-type: square;
+    margin-left:20px;
+    margin-top: 20px;
+    line-height: 25px;
+  }
