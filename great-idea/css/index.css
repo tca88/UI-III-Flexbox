@@ -255,6 +255,8 @@ html {
   justify-content: space-between;
   }
 
+    /* main section content blocks (Digital Design, Ux/UI, Digital Marketing,  Web Development, iOS Development & Android Development) */
+
   .main-container .content-block {
     border: 1px solid black;
     padding: 30px;
@@ -265,7 +267,7 @@ html {
     background: #F4F3F4;
   }
 
-  /* main section content blocks (Digital Design, Ux/UI, Digital Marketing,  Web Development, iOS Development & Android Development) */
+    /* Learn more buttons for each of the content blocks in the main section */
 
   .main-container .content-block button.learn-more-button {
   background: white;
